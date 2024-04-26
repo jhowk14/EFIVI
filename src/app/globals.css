@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+/*===========================================================================HEADER*/
+
+header {
+  font-family: "bebas neue", sans-serif;
+  /*background: linear-gradient(178deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3), transparent, rgba(255, 255, 255, 0.3));*/
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 20vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.l-img {
+  height: 3rem;
+  width: 3rem;
+  filter: drop-shadow(0px 0px 4px black);
+}
+
+.l-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1vw;
+  padding: 1% 2%;
+}
+
+.name {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0px 0px 4px black;
+}
+
+.menu {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.m-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px black;
+  font-size: 1.4rem;
+  padding: 1% 2%;
+  /*border: 4px solid transparent;*/
+  border-bottom: 5px solid transparent;
+
+  &:hover {
+      color: white;
+      /*border: 4px solid white;*/
+      border-bottom: 5px solid chartreuse;
+  }
+}
+
+#hamb {
+  display: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.h-img {
+  width: 5vh;
+  height: 5vh;
+  filter: drop-shadow(0px 0px 4px black);
+}
+
+.x-img {
+  width: 5vh;
+  height: 5vh;
+  filter: drop-shadow(0px 0px 4px black);
+}
+
+.hiden {
+  display: none;
+}
+
+/*===========================================================================APRESENTAÇÃO*/
+
+.presents {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../public/img/bg/olhoquetudovedigital.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 20px 10px black;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.p-content {
+  width: 80%;
+  margin-bottom: 30vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.t-text {
+  color: white;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.d-text {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+/*===========================================================================PROCESSOS*/
+
+.process {
+  width: 100%;
+  height: 90vh;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.cards {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 28vw;
+  min-width: 20vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 0px 2px 10px 2px rgba(128, 128, 128, 0.3);
+  text-align: left;
+  padding: 2%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  cursor: default;
+}
+
+.card-title {
+  color: dodgerblue;
+  font-family: "fira sans", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.card-text {
+  color: #1a1a1a;
+  font-family: "fira sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*===========================================================================DUVIDAS*/
+
+.duvidas {
+  width: 100%;
+  padding: 10vh 0;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.acordeon {
+  width: 90%;
+  text-align: center;
+  box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.acord-title {
+  cursor: default;
+  font-family: "bebas neue", sans-serif;
+  font-size: 2rem;
+}
+
+.acord-item {
+  width: 80%;
+  font-family: "fira sans", sans-serif;
+  font-size: 1.2em;
+}
+
+.pergunta {
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 2vh 0;
+}
+
+.resposta {
+  display: none;
+  cursor: default;
+  padding: 4% 0;
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.resposta.active {
+  display: block;
+}
+
+/*===========================================================================CONTATO*/
+.contato {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+}
+
+.btn-whatsapp {
+  padding: 10px 40px;
+  font-family: "bebas neue", sans-serif;
+  font-size: xx-large;
+  text-decoration: none;
+  color: forestgreen;
+  border: 4px solid forestgreen;
+  border-radius: 5px;
+
+  &:hover {
+      background-color: forestgreen;
+      color: white;
+      box-shadow: 0px 2px 4px 2px rgba(128, 128, 128, 0.3);
+  }
+}
+
+.btn-email {
+  padding: 10px 40px;
+  font-family: "bebas neue", sans-serif;
+  font-size: xx-large;
+  text-decoration: none;
+  color: dodgerblue;
+  border: 4px solid dodgerblue;
+  border-radius: 5px;
+
+  &:hover {
+      background-color: dodgerblue;
+      color: white;
+      box-shadow: 0px 2px 4px 2px rgba(128, 128, 128, 0.3);
+  }
+}
+
+.text-contato {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  color: #1a1a1a;
+}
+
+/*===========================================================================CONTATO*/
+
+.cursos {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.c-title {
+  cursor: default;
+}
+
+.btn-insc {
+  text-decoration: none;
+  font-family: "bebas neue", sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/*===========================================================================INFO*/
+
+.info {
+  width: 100%;
+  height: 150vh;
+  background-image: url(../../public/img/bg/blindwithdog.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*===========================================================================MAPA*/
+
+.local {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map {
+  width: 100%;
+  height: 50vh;
+}
+
+/*===========================================================================FOOTER*/
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-menu {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-link {
+  text-decoration: none;
+  font-family: "bebas neue", sans-serif;
+  font-size: 1.4rem;
+  color: black;
+  border: 4px solid transparent;
+  padding: 1% 2%;
+
+  &:hover {
+      border: 4px solid black;
+  }
+}
+
+/*===========================================================================MEDIAQUERY*/
+
+@media (max-width: 900px) {
+  .logo {
+      width: 60%;
+  }
+  .menu {
+      display: none;
+  }
+  .show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 1%;
+      background-color: rgba(0, 0, 0, 1);
+      backdrop-filter: blur(5px);
+  }
+  #hamb {
+      display: block;
+  }
+  .p-content {
+      margin-bottom: 20vh;
+  }
+  .t-text {
+      font-size: 2.4rem;
+  }
+  .d-text {
+      font-size: 1.3rem;
+  }
+  .process {
+      height: 160vh;
+  }
+  .cards {
+      flex-direction: column;
+      gap: 4vh;
+  }
+  .card {
+      width: 80vw;
+      height: 40vh;
+      padding: 5%;
+  }
+  .card-title {
+      font-size: 1.3rem;
+  }
+  .card-text {
+      font-size: 1.1rem;
+  }
+/*.duvidas {
+
+  }*/
+  .contato {
+      flex-direction: column;
+      gap: 2vh;
+  }
+  .info {
+      height: 100vh;
+  }
+  .f-menu {
+      flex-direction: column;
+      gap: 1vh;
+  }
+}
+
+.custom-link {
+  margin: 30px;
+  position: fixed;
+  bottom: 8px;
+  right: 7px;
+  background-color: #34D399; /* Altere para a cor desejada */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Ajuste conforme necessário */
+  height: 60px; /* Ajuste conforme necessário */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicione sombra conforme desejado */
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remova sublinhado do link */
+}
+
+.custom-link:hover {
+  background-color: #10B981; /* Altere para a cor desejada no hover */
+}
+
+.custom-link img {
+  display: block;
+  width: 40px; /* Ajuste conforme necessário */
+  height: 40px; /* Ajuste conforme necessário */
+}
