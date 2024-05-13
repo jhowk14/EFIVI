@@ -7,7 +7,7 @@ import Info from "./components/info";
 export default function Home() {
   return (
    <>
-   <Presents />
+   <Presents title="EFICIENTE VISUAL" desc="Impactar positivamente o meio ambiente e promover a inclusão digital para deficientes visuais através da reciclagem de eletro/eletrônicos. Realizamos a coleta, reciclagem e montagem de computadores adaptados para serem doados à deficientes visuais." srcImage="img/bg/olhoquetudovedigital.png"/>
    <CardContent />
    <Duvidas />
    <Info />

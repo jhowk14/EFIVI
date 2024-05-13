@@ -1,16 +1,13 @@
-export default function Presents (){
+export default function Presents ({title, desc, srcImage} : {title: string, desc: string, srcImage: string}){
     return (
         <>
-        <div className="presents">
+        <div className="presents" style={{  backgroundImage: `url("${srcImage}")`}}>
         <div className="p-content">
             <div className="p-title">
-                <p className="t-text">EFICIENTE VISUAL</p>
+                <p className="t-text">{title}</p>
             </div>
             <div className="p-desc">
-                <p className="d-text">Impactar positivamente o meio ambiente e promover a inclusão digital para deficientes visuais através da reciclagem de eletro/eletrônicos.</p>
-            </div>
-            <div className="p-desc">
-                <p className="d-text">Realizamos a coleta, reciclagem e montagem de computadores adaptados para serem doados à deficientes visuais.</p>
+                <p className="d-text">{desc}</p>
             </div>
         </div>
     </div>
