@@ -20,7 +20,7 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import { CarouselItem, CarouselContent, Carousel } from "@/components/ui/carousel"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Autoplay from 'embla-carousel-autoplay';
 
 type Images = {

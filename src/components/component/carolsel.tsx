@@ -1,7 +1,7 @@
 'use client'
 import Autoplay from "embla-carousel-autoplay"
 import { CarouselItem, CarouselContent, CarouselPrevious, CarouselNext, Carousel } from "@/components/ui/carousel"
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 type Images = {
   alt: string;

@@ -20,7 +20,7 @@ To read more about using these font, please visit the Next.js documentation:
 
 
 import { CarouselItem, CarouselContent, Carousel, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "./carolsel";
 
 type Images = {
