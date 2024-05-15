@@ -1,6 +1,7 @@
 import { Carolsel } from "@/components/component/carolsel";
 import CardContent2 from "../components/card/cardContent2";
 import Presents from "../components/presents";
+import { Carousel2 } from "@/components/component/carousel2";
 
 
 export default function Projetos() {
@@ -23,6 +24,10 @@ export default function Projetos() {
                 {src: '/img/img2.jpg', alt:'image 2'},
                 {src: '/img/img1.jpg', alt:'image 2'},
             ]}/>
+            <Carousel2 images={[
+                {src: '/img/img3.jpg', alt:'image 2', descricão: 'Como metodologia, todo aprendizado de eletrônica é baseado na estrutura de funcionamento de uma fonte de alimentação de computador (ATX), onde são abordados o funcionamento de cada componente, suas características, símbolos e aplicações.' ,title: "EFIVI"},
+                {src: '/img/img2.jpg', alt:'image 2', descricão: 'Como metodologia, todo aprendizado de eletrônica é baseado na estrutura de funcionamento de uma fonte de alimentação de computador (ATX), onde são abordados o funcionamento de cada componente, suas características, símbolos e aplicações.' ,title: "EFIVI"},
+            ]} />
             <Presents title=" " desc=" " srcImage="../img/img3.jpg"/>
             <div className="p-desc">
                 <p className="d-text">Como metodologia, todo aprendizado de eletrônica é baseado na estrutura de funcionamento de uma fonte de alimentação de computador (ATX), onde são abordados o funcionamento de cada componente, suas características, símbolos e aplicações.</p>
