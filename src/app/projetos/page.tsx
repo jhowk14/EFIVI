@@ -1,3 +1,4 @@
+import { Carolsel } from "@/components/component/carolsel";
 import CardContent2 from "../components/card/cardContent2";
 import Presents from "../components/presents";
 
@@ -14,6 +15,14 @@ export default function Projetos() {
             <div className="p-desc">
                 <p className="d-text">Temos como objetivo oferecer a população em geral, aulas de eletrônica básica com ênfase em hardware (conserto e manutenção de fonte de computador como base de estudo) capacitando tecnicamente e possibilitando a integração de pessoas ao mercado de trabalho.</p>
             </div>
+            <Carolsel images={[
+                {src: '/img/img3.jpg', alt:'image 2'},
+                {src: '/img/img2.jpg', alt:'image 2'},
+                {src: '/img/img1.jpg', alt:'image 2'},
+                {src: '/img/img3.jpg', alt:'image 2'},
+                {src: '/img/img2.jpg', alt:'image 2'},
+                {src: '/img/img1.jpg', alt:'image 2'},
+            ]}/>
             <Presents title=" " desc=" " srcImage="../img/img3.jpg"/>
             <div className="p-desc">
                 <p className="d-text">Como metodologia, todo aprendizado de eletrônica é baseado na estrutura de funcionamento de uma fonte de alimentação de computador (ATX), onde são abordados o funcionamento de cada componente, suas características, símbolos e aplicações.</p>
