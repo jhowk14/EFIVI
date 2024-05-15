@@ -259,7 +259,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 10vh;
+  gap: 8vh;
 }
 
 .acordeon {
@@ -270,7 +270,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
   padding: 20px 0;
 }
 

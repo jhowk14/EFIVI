@@ -1,35 +1,33 @@
 'use client'
-import { useState } from "react";
-import AcordeonItem from "./acordeonItem";
-import DuvidasAcordeon from "./duvidasAcordeon";
+import { Acordeon } from "@/components/component/acordeon";
+
+const accordionItems = [
+    {
+      value: "item-1",
+      question: "Qual a importância da reciclagem ?",
+      answer: "Alem de evitar a contaminação do meio ambiente, evitamos a poluição gerada pela fabricação das peças."
+    },
+    {
+      value: "item-2",
+      question: "Qual o propósito da ong EFIVI -  Eficiente Visual ?",
+      answer: "Incentivar a reciclagem de eletrônicos, colaborar nesse aspecto recolhendo e reutilizando esse material e realizar doação de equipamentos ercuperados, como computadores adapatados para o deficiente visual."
+      
+    },
+    {
+        value: "item-3",
+        question: "Como posso participar do curso de eletrônica ?",
+        answer: "Contate a EFIVI abaixo ou faça-nos uma visita."
+    }
+  ];
 
 export default function Duvidas (){
-    const [showItem, setShowItem] = useState<number | null>(null);
-
-    const handleItemClick = (index: any) => {
-        setShowItem(index);
-    };
     return (
         <>
         <div className="duvidas">
             <p className="acord-title">Dúvidas frequentes</p>
-            <DuvidasAcordeon>
-                <AcordeonItem 
-                    onclick={() => handleItemClick(1)}
-                    active={showItem === 1}
-                    pergunta="Qual a importância da reciclagem ?" 
-                    resposta="Alem de evitar a contaminação do meio ambiente, evitamos a poluição gerada pela fabricação das peças."/>
-                <AcordeonItem 
-                    onclick={() => handleItemClick(2)}
-                    active={showItem === 2}
-                    pergunta="Qual o propósito da ong EFIVI -  Eficiente Visual ?" 
-                    resposta="Incentivar a reciclagem de eletrônicos, colaborar nesse aspecto recolhendo e reutilizando esse material e realizar doação de equipamentos ercuperados, como computadores adapatados para o deficiente visual."/>
-                <AcordeonItem 
-                    onclick={() => handleItemClick(3)}
-                    active={showItem === 3}
-                    pergunta="Como posso participar do curso de eletrônica ?" 
-                    resposta="Contate a EFIVI abaixo ou faça-nos uma visita."/>
-            </DuvidasAcordeon>
+            <div className="mx-10 w-full px-4 flex justify-center">
+            <Acordeon items={accordionItems}/>
+            </div>
         </div>
         </>
     )

@@ -9,7 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        yellowAcordeon: {
+          100: "#f7f7c4",
+        }
+      }
+    },
   },
   plugins: [require("tailwindcss-animate")],
 }

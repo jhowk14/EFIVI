@@ -1,3 +1,5 @@
+'use client'
+import Autoplay from "embla-carousel-autoplay"
 import { CarouselItem, CarouselContent, CarouselPrevious, CarouselNext, Carousel } from "@/components/ui/carousel"
 import Image from "next/image";
 
@@ -8,7 +10,11 @@ type Images = {
 
 export function Carolsel({ images }: { images: Images[] }) {
   return (
-    <Carousel className="w-full">
+    <Carousel className="w-full" plugins={[
+      Autoplay({
+        delay: 2000,
+      }),
+    ]}>
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={index}>
@@ -29,7 +35,7 @@ export function Carolsel({ images }: { images: Images[] }) {
       <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/50 p-2 hover:bg-white/75 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 dark:bg-gray-950/50 dark:hover:bg-gray-800/75 dark:focus-visible:ring-gray-300">
         <ChevronLeftIcon className="h-6 w-6 text-gray-900 dark:text-gray-50" />
       </CarouselPrevious>
-      <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/50 p-2 hover:bg-white/75 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 dark:bg-gray-950/50 dark:hover:bg-gray-800/75 dark:focus-visible:ring-gray-300">
+      <CarouselNext  className="absolute right-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/50 p-2 hover:bg-white/75 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 dark:bg-gray-950/50 dark:hover:bg-gray-800/75 dark:focus-visible:ring-gray-300">
         <ChevronRightIcon className="h-6 w-6 text-gray-900 dark:text-gray-50" />
       </CarouselNext>
     </Carousel>
