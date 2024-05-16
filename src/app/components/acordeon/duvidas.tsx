@@ -17,7 +17,17 @@ const accordionItems = [
         value: "item-3",
         question: "Como posso participar do curso de eletrônica ?",
         answer: "Contate a EFIVI abaixo ou faça-nos uma visita."
-    }
+    },
+    {
+      value: "item-4",
+      question: "Como receber um computador adptado para def. visuais ?",
+      answer: "Entre em contato com a EFIVI através do whatsapp, você deve comprovar a necessidade do aparelho."
+  },
+  {
+    value: "item-5",
+    question: "Onde se localiza a ong EFIVI ?",
+    answer: "Catanduva - SP"
+},
   ];
 
 export default function Duvidas (){

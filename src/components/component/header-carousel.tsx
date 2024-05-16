@@ -19,8 +19,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import { CarouselItem, CarouselContent, Carousel } from "@/components/ui/carousel"
-import { Button } from "@/components/ui/button"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Autoplay from 'embla-carousel-autoplay';
 
 type Images = {
@@ -30,7 +29,7 @@ type Images = {
 
 export function HeaderCarousel({title, desc, Images} : {title: string, desc: string, Images: Images[]}) {
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden">
+    <section className="relative h-[73vh] w-full overflow-hidden">
       <Carousel  className="absolute inset-0 h-full w-full" plugins={[
       Autoplay({
         delay: 2000,
@@ -41,17 +40,21 @@ export function HeaderCarousel({title, desc, Images} : {title: string, desc: str
           {Images.map((image, index) => (
           <CarouselItem key={index}>
              <Image
-                  alt={image.alt}
-                  src={image.src}
-                  layout="fill"
-                  objectFit="cover"
-                  quality={100}
-                />
+               alt={image.alt}
+               className="h-[720px] w-full object-cover"
+               height="720"
+               src={image.src}
+               style={{
+                 aspectRatio: "1280/720",
+                 objectFit: "cover",
+               }}
+               width="1280"
+            />
           </CarouselItem>
         ))}
         </CarouselContent>
       </Carousel>
-      <div className="relative z-10 flex h-full w-full items-center justify-center mt-32">
+      <div className="relative z-0 flex h-full w-full items-center justify-center mt-32">
       <div className="p-content">
             <div className="p-title">
                 <p className="t-text">{title}</p>

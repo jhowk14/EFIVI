@@ -1,0 +1,22 @@
+export const imgsBG = [
+    {src: "/img/bg/1.png", alt:"img 1"},
+    {src: "/img/bg/2.png", alt:"img 1"},
+    {src: "/img/bg/3.png", alt:"img 1"},
+    {src: "/img/bg/4.png", alt:"img 1"},
+    {src: "/img/bg/5.png", alt:"img 1"},
+    {src: "/img/bg/6.png", alt:"img 1"},
+    {src: "/img/bg/7.png", alt:"img 1"},
+    {src: "/img/bg/8.png", alt:"img 1"},
+    {src: "/img/bg/9.png", alt:"img 1"},
+    {src: "/img/bg/10.png", alt:"img 1"},
+    {src: "/img/bg/11.png", alt:"img 1"},
+    {src: "/img/bg/12.png", alt:"img 1"},
+    {src: "/img/bg/13.png", alt:"img 1"},
+    {src: "/img/bg/bgEletronicos.png", alt:"img 1"},
+    {src: "/img/bg/blindwithdog.png", alt:"img 1"},
+    {src: "/img/bg/connec.png", alt:"img 1"},
+    {src: "/img/bg/cpu.png", alt:"img 1"},
+    {src: "/img/bg/olhoquetudovedigital.png", alt:"img 1"},
+    {src: "/img/bg/t31.png", alt:"img 1"},
+
+    ]

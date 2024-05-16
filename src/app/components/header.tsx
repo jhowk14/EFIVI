@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header (){
@@ -21,9 +21,9 @@ export default function Header (){
         </nav>
         <button id="hamb">
            {hamburguer ? 
-           (<Image className="h-img" onClick={()=>{setHamburguer(!hamburguer)}} src="/img/icons/hamb.png" alt="Ícone hamburguer para abrir o menu principal"  width={0} height={0} sizes="100vw"/> ) 
+           (<Image className="h-img" onClick={()=>{setHamburguer(!hamburguer)}} src="/img/icons/hamb.png" alt="Ícone hamburguer para abrir o menu principal"  width={0} height={0} sizes="80vw"/> ) 
            :
-           ( <Image className="x-img" onClick={()=>{setHamburguer(!hamburguer)}} src="/img/icons/x.png" alt="Ícone de x para ocultar o menu principal"  width={0} height={0} sizes="100vw"/>)}
+           ( <Image className="x-img" onClick={()=>{setHamburguer(!hamburguer)}} src="/img/icons/x.png" alt="Ícone de x para ocultar o menu principal"  width={0} height={0} sizes="80vw"/>)}
         </button>
     </header>
     </>

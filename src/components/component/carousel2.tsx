@@ -20,14 +20,13 @@ To read more about using these font, please visit the Next.js documentation:
 
 
 import { CarouselItem, CarouselContent, Carousel, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "./carolsel";
 
 type Images = {
   alt: string;
   src: string;
   descricão: string;
-  title: string;
 }
 
 export function Carousel2({ images }: { images: Images[] }) {
@@ -38,8 +37,8 @@ export function Carousel2({ images }: { images: Images[] }) {
           <CarouselItem key={index}>
             <Image
               alt={image.alt}
-              className="w-full h-[400px] object-cover rounded-t-lg"
-              height="400"
+              className="w-full h-[700px] object-cover rounded-t-lg"
+              height="700"
               src={image.src}
               style={{
                 aspectRatio: "800/400",
@@ -47,9 +46,8 @@ export function Carousel2({ images }: { images: Images[] }) {
               }}
               width="800"
             />
-            <div className="bg-gray-100 text-gray-950 p-4 text-center rounded-b-lg">
-              <h3 className="text-2xl font-bold">{image.title}</h3>
-              <p className="text-lg font-semibold">{image.descricão}</p>
+            <div className="bg-gray-100 text-gray-950 p-4 text-center rounded-b-lg py-8">
+              <p className="text-xl font-semibold">{image.descricão}</p>
             </div>
           </CarouselItem>
         ))}
