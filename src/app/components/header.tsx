@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Header (){
@@ -8,16 +9,15 @@ export default function Header (){
         <>
         <header>
         <div className="logo">
-            <a className="l-link" href="#">
+            <Link className="l-link" href="/">
                 <Image className="l-img" src="/img/icons/2.png" alt=""  width={0} height={0} sizes="100vw"/>
                 <h1 id="l-name" className="name">E F I V I</h1>
-            </a>
+            </Link>
         </div>
         <nav className={`menu ${!hamburguer ? 'show' : ''}`}>
-            <a className="m-link" href="#"><h2>ONG</h2></a>
-            <a className="m-link" href="#"><h2>Projetos</h2></a>
-            <a className="m-link" href="#"><h2>Impacto</h2></a>
-            <a className="m-link" href="#"><h2>Acessibilidade</h2></a>
+            <Link className="m-link" href="/ong"><h2>ONG</h2></Link>
+            <Link className="m-link" href="/projetos"><h2>Projetos</h2></Link>
+            <Link className="m-link" href="/devs"><h2>Desenvolvedores</h2></Link>
         </nav>
         <button id="hamb">
            {hamburguer ? 

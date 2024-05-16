@@ -16,12 +16,6 @@ export default function Info (){
                     adaptados oferecem acesso a recursos educacionais, oportunidades de emprego e conectam indivíduos com suas 
                     comunidades de uma maneira significativa.
                 </p>
-                <hr />
-                <p className="impact">
-                    Além disso, o trabalho da EFIVI não termina na adaptação dos computadores. A organização também fornece suporte contínuo, 
-                    treinamento e assistência técnica, garantindo que esses dispositivos sejam uma fonte confiável de independência e 
-                    inclusão ao longo do tempo.
-                </p>
             </div>
         </div>
     );
