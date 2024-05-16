@@ -14,10 +14,10 @@ export default function Header (){
                 <h1 id="l-name" className="name">E F I V I</h1>
             </Link>
         </div>
-        <nav className={`menu ${!hamburguer ? 'show' : ''}`}>
-            <Link className="m-link" href="/ong"><h2>ONG</h2></Link>
-            <Link className="m-link" href="/projetos"><h2>Projetos</h2></Link>
-            <Link className="m-link" href="/devs"><h2>Desenvolvedores</h2></Link>
+        <nav className={`menu ${!hamburguer ? 'show' : ''}`} >
+            <Link className="m-link" href="/ong" onClick={()=>{setHamburguer(!hamburguer)}}><h2>ONG</h2></Link>
+            <Link className="m-link" href="/projetos" onClick={()=>{setHamburguer(!hamburguer)}}><h2>Projetos</h2></Link>
+            <Link className="m-link" href="/devs" onClick={()=>{setHamburguer(!hamburguer)}}><h2>Desenvolvedores</h2></Link>
         </nav>
         <button id="hamb">
            {hamburguer ? 
