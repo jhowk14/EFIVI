@@ -13,7 +13,6 @@ export const imgsBG = [
     {src: "/img/bg/12.png", alt:"img 1"},
     {src: "/img/bg/13.png", alt:"img 1"},
     {src: "/img/bg/bgEletronicos.png", alt:"img 1"},
-    {src: "/img/bg/blindwithdog.png", alt:"img 1"},
     {src: "/img/bg/connec.png", alt:"img 1"},
     {src: "/img/bg/cpu.png", alt:"img 1"},
     {src: "/img/bg/olhoquetudovedigital.png", alt:"img 1"},
