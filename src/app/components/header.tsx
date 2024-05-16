@@ -10,7 +10,7 @@ export default function Header (){
         <header>
         <div className="logo">
             <Link className="l-link" href="/">
-                <Image className="l-img" src="/img/icons/2.png" alt=""  width={0} height={0} sizes="100vw"/>
+                <Image className="l-img" src="/img/icons/2.png" alt="logo efivi"  width={0} height={0} sizes="100vw"/>
                 <h1 id="l-name" className="name">E F I V I</h1>
             </Link>
         </div>

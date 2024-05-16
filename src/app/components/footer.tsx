@@ -6,7 +6,7 @@ export default function Footer (){
            <footer>
         <div className="logo">
             <a href="#">
-                <Image src="/img/icons/1.png" alt=""  width={0} height={0} sizes="100vw" style={{width: '100%', height: '100%'}}/>
+                <Image src="/img/icons/1.png" alt="logo efivi"  width={0} height={0} sizes="100vw" style={{width: '100%', height: '100%'}}/>
             </a>
         </div>
         <nav className="f-menu">
