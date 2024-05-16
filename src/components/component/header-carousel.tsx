@@ -32,7 +32,7 @@ export function HeaderCarousel({title, desc, Images} : {title: string, desc: str
     <section className="relative h-[73vh] w-full overflow-hidden">
       <Carousel  className="absolute inset-0 h-full w-full" plugins={[
       Autoplay({
-        delay: 2000,
+        delay: 4000,
       }),
     ]}
       >
