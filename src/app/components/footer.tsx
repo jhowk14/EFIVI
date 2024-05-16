@@ -13,7 +13,12 @@ export default function Footer (){
             <a className="f-link" href="#"><h3>Sobre nós</h3></a>
             <a className="f-link" href="#"><h3>Privacidade</h3></a>
             <a className="f-link" href="#"><h3>Desenvolvedores</h3></a>
+            <h2><strong>© 2024 - EFIVI</strong></h2>
         </nav>
+        <div className="links">
+            <a href="https://www.youtube.com/@SenhorGalvao" className="hover:bg-white" target="_blank"><Image src="/img/icons/youtube.png" alt="icone youtube" width='50' height='50'/></a>
+            <a href="https://www.facebook.com/people/EFIVI-Eficiente-Visual/100063726155111/" className="hover:bg-white" target="_blank"><Image src="/img/icons/facebook.png" alt="icone facebook" width='50' height='50'/></a>
+        </div>
     </footer>
         </>
     )
