@@ -12,7 +12,7 @@ export default function CardContent (){
                   text="Testamos e recuperamos componentes para montagem principalmente de computadores adaptados para uso de deficientes visuais." 
                   title="2 - Restauração e montagem"/>
                 <Card 
-                  text="Os computadores e quipamentos são doados e os demais componentes são usados em cursos gratuitos de eletrônica que lecionamos em nossa cede." 
+                  text="Os computadores e quipamentos são doados e os demais componentes são usados em cursos gratuitos de eletrônica que lecionamos em nossa sede." 
                   title="3 - Doação e cursos"/>
             </div>
         </div>

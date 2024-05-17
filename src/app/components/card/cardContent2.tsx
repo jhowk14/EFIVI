@@ -4,7 +4,7 @@ export default function CardContent2 (){
     return (
         <>
             <div className="process2">
-                <h2 className="font-semibold text-2xl">Áreas que esse projeto beneficia</h2>
+                <h2 className="font-semibold text-2xl text-center m-4">Áreas que esse projeto beneficia</h2>
                 <div className="cards2">
                     <Card 
                     text="Capacitação profissional (aulas de eletrônica básica com ênfase em hardware gratuitamente)."
