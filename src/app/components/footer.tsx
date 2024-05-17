@@ -4,7 +4,7 @@ export default function Footer (){
     return (
         <>
            <footer>
-        <div className="w-[20vw]">
+        <div className="w-[100px]">
             <a href="#">
                 <Image src="/img/icons/1.png" alt="logo efivi"  width={0} height={0} sizes="100vw" style={{width: '100%', height: '100%'}}/>
             </a>
