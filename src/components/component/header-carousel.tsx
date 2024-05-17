@@ -55,12 +55,12 @@ export function HeaderCarousel({title, desc, Images} : {title: string, desc: str
         </CarouselContent>
       </Carousel>
       <div className="relative z-0 flex h-full w-full items-center justify-center mt-32">
-      <div className="p-content">
+      <div className="p-content ">
             <div className="p-title">
-                <p className="t-text">{title}</p>
+                <p className="md:text-5xl text-2xl text-gray-50 font-semibold">{title}</p>
             </div>
-            <div className="p-desc">
-                <p className="d-text">{desc}</p>
+            <div className="">
+                <p className="text-gray-50 md:text-xl text-sm">{desc}</p>
             </div>
         </div>
       </div>
