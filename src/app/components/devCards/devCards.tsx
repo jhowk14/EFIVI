@@ -7,7 +7,7 @@ export default function DevCards() {
                 <DevCard 
                     devphoto="/img/devs/gui.jpg"
                     devname="Guilherme Junichi"
-                    devarea="Frontend / Backend"
+                    devarea="Frontend / Designer"
                     devcontact="@guijunichi"
                 />
                 <DevCard 
