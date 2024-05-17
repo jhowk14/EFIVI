@@ -180,7 +180,7 @@ header {
 .d-text {
   color: white;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .links {
@@ -591,7 +591,7 @@ footer {
       font-size: 2.4rem;
   }
   .d-text {
-      font-size: 1.3rem;
+      font-size: 1rem;
   }
   .process {
       height: 160vh;
