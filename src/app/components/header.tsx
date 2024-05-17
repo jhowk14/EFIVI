@@ -15,7 +15,7 @@ export default function Header (){
             </Link>
         </div>
         <nav className={`menu ${!hamburguer ? 'show' : ''}`} >
-            <Link className="m-link" href="/ong" onClick={()=>{setHamburguer(!hamburguer)}}><h2>ONG</h2></Link>
+            <Link className="m-link" href="/ong" onClick={()=>{setHamburguer(!hamburguer)}}><h2>Sobre nós</h2></Link>
             <Link className="m-link" href="/projetos" onClick={()=>{setHamburguer(!hamburguer)}}><h2>Projetos</h2></Link>
             <Link className="m-link" href="/devs" onClick={()=>{setHamburguer(!hamburguer)}}><h2>Desenvolvedores</h2></Link>
         </nav>

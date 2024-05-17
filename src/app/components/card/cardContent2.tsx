@@ -4,14 +4,14 @@ export default function CardContent2 (){
     return (
         <>
             <div className="process2">
-                <h2 className="font-semibold text-2xl text-center m-4">Áreas que esse projeto beneficia</h2>
+                <h2 className="font-semibold text-2xl text-center m-4">Áreas que este projeto beneficia</h2>
                 <div className="cards2">
                     <Card 
                     text="Capacitação profissional (aulas de eletrônica básica com ênfase em hardware gratuitamente)."
                     image="img/cur.png"
                     altt="icone computador desktop"/>
                     <Card
-                    text="Proteção ao meio ambiente (descarte ecológico de materiais eletro/eletronico)." 
+                    text="Proteção ao meio ambiente (descarte ecológico de materiais eletro/eletronicos)." 
                     image="img/eco.png"
                     altt="icone reciclagem"/>
                     <Card

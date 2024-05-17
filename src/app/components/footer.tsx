@@ -10,9 +10,9 @@ export default function Footer (){
             </a>
         </div>
         <nav className="f-menu">
-            <a className="f-link" href="#"><h3>Sobre nós</h3></a>
-            <a className="f-link" href="#"><h3>Privacidade</h3></a>
-            <a className="f-link" href="#"><h3>Desenvolvedores</h3></a>
+            <a className="f-link" href="/ong"><h3>Sobre nós</h3></a>
+            <a className="f-link" href="/projetos"><h3>Projetos</h3></a>
+            <a className="f-link" href="/devs"><h3>Desenvolvedores</h3></a>
             <h2><strong>© 2024 - EFIVI</strong></h2>
         </nav>
         <div className="links">

@@ -37,8 +37,9 @@ export function Carousel2({ images }: { images: Images[] }) {
           <CarouselItem key={index}>
             <Image
               alt={image.alt}
-              className="w-full h-[700px] object-cover rounded-t-lg"
+              className="w-full h-[600px] object-cover rounded-t-lg"
               height="700"
+              layout="responsive"
               src={image.src}
               style={{
                 aspectRatio: "800/400",
@@ -47,7 +48,7 @@ export function Carousel2({ images }: { images: Images[] }) {
               width="800"
             />
             <div className="bg-gray-100 text-gray-950 p-4 text-center rounded-b-lg py-8">
-              <p className="text font-semibold">{image.descricão}</p>
+              <p className="text-xs md:text-base font-semibold">{image.descricão}</p>
             </div>
           </CarouselItem>
         ))}

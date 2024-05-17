@@ -14,7 +14,7 @@ export function Carolsel({ images }: { images: Images[] }) {
           <CarouselItem key={index}>
             <Image
               alt={image.alt}
-              className="w-full h-[700px] object-cover rounded-lg"
+              className="w-full h-[600px] object-cover rounded-lg"
               height="400"
               src={image.src}
               style={{
